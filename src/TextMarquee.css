@@ -1,0 +1,18 @@
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee-content {
+    display: flex;
+    white-space: nowrap;
+    color: #E2E2E2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-33.3333%); } /* Move by one-third */
+  }

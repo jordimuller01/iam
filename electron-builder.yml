@@ -1,0 +1,23 @@
+appId: "com.example.yourapp"
+directories:
+  output: "dist"
+  buildResources: "build"
+files:
+  - "package.json"
+  - "main.js"
+  - "build/**/*"
+asarUnpack:
+  - "server.js"
+extraMetadata:
+  main: "main.js"
+mac:
+  category: "public.app-category.utilities"
+win:
+  target: "nsis"
+publish:
+  provider: github
+  owner: "jordimuller01"
+  repo: "iam"
+  releaseType: release
+extends: null
+
